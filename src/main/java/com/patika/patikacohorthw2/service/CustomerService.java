@@ -25,8 +25,6 @@ public class CustomerService {
         customerRepository.add(customer);
     }
 
-
-
     public List<Customer> getAllCustomers() {
         return customerRepository.getAllCustomers();
     }
@@ -60,8 +58,7 @@ public class CustomerService {
         return customerRepository.getCustomersRegisteredInJune();
     }
 
-    public Double getCustomersRegisteredInJuneWithInvoice() {
+    public Double getTotalInvoiceAmountForCustomersRegisteredInJune() {
         return customerRepository.getTotalInvoiceAmountForCustomersRegisteredInJune();
-
     }
 }

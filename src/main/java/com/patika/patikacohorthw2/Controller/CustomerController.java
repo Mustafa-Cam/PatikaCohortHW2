@@ -40,7 +40,7 @@ public class CustomerController {
     }
 
 @GetMapping("/getCustomersRegisteredInJuneWithInvoice")
-    public GenericResponse<Double> getCustomersRegisteredInJuneWithInvoice() {
-        return  GenericResponse.success(customerService.getCustomersRegisteredInJuneWithInvoice());
+    public GenericResponse<Double> getTotalInvoiceAmountForCustomersRegisteredInJune() {
+        return  GenericResponse.success(customerService.getTotalInvoiceAmountForCustomersRegisteredInJune());
     }
 }
